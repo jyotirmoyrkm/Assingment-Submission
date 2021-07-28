@@ -1,0 +1,6 @@
+print("Enter the list:\n")
+L_1 = list(map(int, input().split()))
+L_1.sort()
+L_1.reverse()
+print("After sorting the said ntegers:")
+print(*L_1)
