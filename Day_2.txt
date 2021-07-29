@@ -1,0 +1,26 @@
+
+#Program to delete all occurence of an elenent in a list
+mylist = [21, 5, 8, 52, 21, 87]
+r_item = 21
+
+#remove the item for all its occurrences
+mylist = list(filter((r_item).__ne__, mylist))
+
+print(mylist)
+
+
+
+#Python program to check wether the string is a pangram
+import string
+def ispangram(str):
+   alphabet = "abcdefghijklmnopqrstuvwxyz"
+   for char in alphabet:
+      if char not in str.lower():
+         return False
+   return True
+# main
+string = 'The five boxing wizards jump quickly.'
+if(ispangram(string) == True):
+   print("Yes")
+else:
+   print("No")
